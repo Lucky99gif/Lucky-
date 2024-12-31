@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Year Wish</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
+        #message {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="message"></div>
+
+    <script>
+        // Function to display the New Year wish
+        function displayWish() {
+            const name = "Aakansha"; // Replace with her name
+            const year = new Date().getFullYear() + 1; // Next year
+            const message = `Happy New Year, ${name}! 🎉\n\nAs we step into ${year}, I look forward to creating more beautiful memories with you.`;
+            document.getElementById('message').innerText = message;
+        }
+
+        // Call the function to display the wish
+        displayWish();
+    </script>
+</body>
+</html>
